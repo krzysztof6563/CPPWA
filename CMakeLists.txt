@@ -5,12 +5,12 @@ project(CPPWA LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-file(GLOB CPPWA_SRC
+file(GLOB_RECURSE CPPWA_SRC
     "*.hpp"
+    "*.h"
     "*.cpp"
-    "src/**/*.hpp"
-    "src/**/*.cpp"
     "src/*.hpp"
+    "src/*.h"
     "src/*.cpp"
 )
 
