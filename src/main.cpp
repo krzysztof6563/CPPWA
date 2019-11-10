@@ -25,7 +25,7 @@ int main(int argc, char* argv[])
     bootstrap();
     std::cout << "<h1>Hello world!</h1>";
 
-    RequestGet* test = new RequestGet(argv[0]);
+    RequestGet* test = new RequestGet();
 
 
 
@@ -34,7 +34,11 @@ int main(int argc, char* argv[])
     std::cout << "<title>CGI Environment Variables</title>\n";
     std::cout << "</head>\n";
     std::cout << "<body>\n";
-    test->send("5");
+    test->send("id","5");
+
+    test->send("id2","51");
+
+    test->send("id3","553");
     std::cout << "<table border = \"0\" cellspacing = \"2\">";
 
     for ( int i = 0; i < 24; i++ )
