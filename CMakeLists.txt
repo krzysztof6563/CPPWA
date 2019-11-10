@@ -6,9 +6,11 @@ set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 file(GLOB CPPWA_SRC
-    "*.h"
+    "*.hpp"
     "*.cpp"
-    "src/*.h"
+    "src/**/*.hpp"
+    "src/**/*.cpp"
+    "src/*.hpp"
     "src/*.cpp"
 )
 
