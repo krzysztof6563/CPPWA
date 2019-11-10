@@ -1,0 +1,26 @@
+httpd.conf
+LoadModule cgid_module modules/mod_cgid.so
+LoadModule cgi_module modules/mod_cgi.so
+
+.htaccess
+DirectoryIndex CPPWA.cgi
+
+Host: 
+<VirtualHost *:80>
+    ServerAdmin webmaster@cpp.localhost
+    DocumentRoot "/srv/vhosts/CPPWA"
+    ServerName cpp.localhost
+    ServerAlias cpp.localhost
+    <Directory "/srv/vhosts/CPPWA">
+	    Options Indexes FollowSymLinks MultiViews
+	    AllowOverride All
+	    Order allow,deny
+	    allow from all
+	    Require all granted
+	    Options +ExecCGI
+	    AddHandler cgi-script .cgi
+    </Directory>
+    ErrorLog "/var/log/vhosts/cppwa.localhost-error_log"
+    CustomLog "/var/log/vhosts/cppwa.localhost-access_log" common
+</VirtualHost>
+
