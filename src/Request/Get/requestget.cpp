@@ -1,26 +1,39 @@
 #include "./requestget.h"
 #include <iostream>
-#include <cstdlib>
+#include <map>
 
 RequestGet::RequestGet()
 {
 
 }
 
-RequestGet::RequestGet( std::string adres ) : Request(), adres(adres)
+int RequestGet::send(std::string key, std::string value)
 {
-
-}
-
-int RequestGet::send(std::string value)
-{
-    if( value != "")
+    if( !values.empty() )
     {
-        std::cout <<"<a href = "<< "" <<"?id="<<value<<"&ef=2>click me</a>";
+        std::map<std::string, std::string>::iterator itr;
+
+        std::cout <<"<a href =?";
+        for (itr = values.begin(); itr != values.end(); ++itr)
+        {
+            std::cout << itr->first
+                      << "=" << itr->second
+                      << "&";
+        }
+
+        values.insert(std::pair<std::string,std::string>(key,value));
+        std::cout << key << "=" << value << ">click me</a>";
         return 0;
     }
     else
     {
+        values.insert(std::pair<std::string,std::string>(key,value));
+        std::cout <<"<a href =?" << key << "=" << value << ">click me</a>";
         return -1;
     }
+}
+
+int RequestGet::show()
+{
+    return 0;
 }
