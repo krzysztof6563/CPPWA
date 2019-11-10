@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include "HTTPHeader/HTTPHeader.hpp"
+#include "Request/Get/requestget.h"
 
 const std::string ENV[ 24 ] = {
    "COMSPEC", "DOCUMENT_ROOT", "GATEWAY_INTERFACE",
@@ -24,11 +25,16 @@ int main(int argc, char* argv[])
     bootstrap();
     std::cout << "<h1>Hello world!</h1>";
 
+    RequestGet* test = new RequestGet(argv[0]);
+
+
+
     std::cout << "<html>\n";
     std::cout << "<head>\n";
     std::cout << "<title>CGI Environment Variables</title>\n";
     std::cout << "</head>\n";
     std::cout << "<body>\n";
+    test->send("5");
     std::cout << "<table border = \"0\" cellspacing = \"2\">";
 
     for ( int i = 0; i < 24; i++ ) {
@@ -44,7 +50,7 @@ int main(int argc, char* argv[])
       std::cout << "</td></tr>\n";
     }
 
-    std::cout << "</table><\n";
+    std::cout << "</table>\n";
     std::cout << "</body>\n";
     std::cout << "</html>\n";
 
