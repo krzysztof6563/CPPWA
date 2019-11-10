@@ -37,14 +37,18 @@ int main(int argc, char* argv[])
     test->send("5");
     std::cout << "<table border = \"0\" cellspacing = \"2\">";
 
-    for ( int i = 0; i < 24; i++ ) {
+    for ( int i = 0; i < 24; i++ )
+    {
       std::cout << "<tr><td>" << ENV[ i ] << "</td><td>";
 
       // attempt to retrieve value of environment variable
-      char *value = getenv( ENV[ i ].c_str() );
-      if ( value != 0 ) {
+      char* value = getenv( ENV[ i ].c_str() );
+      if ( value != 0 )
+      {
          std::cout << value;
-      } else {
+      }
+      else
+      {
          std::cout << "Environment variable does not exist.";
       }
       std::cout << "</td></tr>\n";
