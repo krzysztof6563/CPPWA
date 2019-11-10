@@ -5,7 +5,14 @@ project(CPPWA LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_executable(CPPWA main.cpp)
+file(GLOB CPPWA_SRC
+    "*.h"
+    "*.cpp"
+    "src/*.h"
+    "src/*.cpp"
+)
+
+add_executable(CPPWA ${CPPWA_SRC})
 set_target_properties(
     CPPWA
     PROPERTIES
