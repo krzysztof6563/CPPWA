@@ -1,10 +1,16 @@
 #include <iostream>
+#include <string>
+#include "HTTPHeader/HTTPHeader.hpp"
 
-using namespace std;
+void bootstrap() {
+    HTTPHeader header;
+    header.setOption("Content-Type", "text/html");
+    header.sendHeader();
+}
 
 int main()
 {
-    cout << "Content-type: text/html\n\n" << endl;
-    cout << "<html>Hello world!</html>" << endl;
+    bootstrap();
+    std::cout << "<h1>Hello world!</h1>";
     return 0;
 }
