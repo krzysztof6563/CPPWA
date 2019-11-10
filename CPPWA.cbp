@@ -82,7 +82,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/dawid/c++/CPPWA/CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.cpp">
+		<Unit filename="/home/dawid/c++/CPPWA/src/HTTPHeader/HTTPHeader.cpp">
+			<Option target="CPPWA"/>
+		</Unit>
+		<Unit filename="/home/dawid/c++/CPPWA/src/HTTPHeader/HTTPHeader.hpp">
+			<Option target="CPPWA"/>
+		</Unit>
+		<Unit filename="/home/dawid/c++/CPPWA/src/config/Config.cpp">
+			<Option target="CPPWA"/>
+		</Unit>
+		<Unit filename="/home/dawid/c++/CPPWA/src/config/Config.h">
 			<Option target="CPPWA"/>
 		</Unit>
 		<Unit filename="/home/dawid/c++/CPPWA/src/database/Database.cpp">

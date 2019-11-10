@@ -123,32 +123,59 @@ CPPWA/fast:
 	$(MAKE) -f CMakeFiles/CPPWA.dir/build.make CMakeFiles/CPPWA.dir/build
 .PHONY : CPPWA/fast
 
-CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.o: CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.cpp.o
+src/HTTPHeader/HTTPHeader.o: src/HTTPHeader/HTTPHeader.cpp.o
 
-.PHONY : CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.o
+.PHONY : src/HTTPHeader/HTTPHeader.o
 
 # target to build an object file
-CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.cpp.o:
-	$(MAKE) -f CMakeFiles/CPPWA.dir/build.make CMakeFiles/CPPWA.dir/CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.cpp.o
-.PHONY : CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.cpp.o
+src/HTTPHeader/HTTPHeader.cpp.o:
+	$(MAKE) -f CMakeFiles/CPPWA.dir/build.make CMakeFiles/CPPWA.dir/src/HTTPHeader/HTTPHeader.cpp.o
+.PHONY : src/HTTPHeader/HTTPHeader.cpp.o
 
-CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.i: CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.cpp.i
+src/HTTPHeader/HTTPHeader.i: src/HTTPHeader/HTTPHeader.cpp.i
 
-.PHONY : CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.i
+.PHONY : src/HTTPHeader/HTTPHeader.i
 
 # target to preprocess a source file
-CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.cpp.i:
-	$(MAKE) -f CMakeFiles/CPPWA.dir/build.make CMakeFiles/CPPWA.dir/CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.cpp.i
-.PHONY : CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.cpp.i
+src/HTTPHeader/HTTPHeader.cpp.i:
+	$(MAKE) -f CMakeFiles/CPPWA.dir/build.make CMakeFiles/CPPWA.dir/src/HTTPHeader/HTTPHeader.cpp.i
+.PHONY : src/HTTPHeader/HTTPHeader.cpp.i
 
-CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.s: CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.cpp.s
+src/HTTPHeader/HTTPHeader.s: src/HTTPHeader/HTTPHeader.cpp.s
 
-.PHONY : CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.s
+.PHONY : src/HTTPHeader/HTTPHeader.s
 
 # target to generate assembly for a file
-CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.cpp.s:
-	$(MAKE) -f CMakeFiles/CPPWA.dir/build.make CMakeFiles/CPPWA.dir/CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.cpp.s
-.PHONY : CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.cpp.s
+src/HTTPHeader/HTTPHeader.cpp.s:
+	$(MAKE) -f CMakeFiles/CPPWA.dir/build.make CMakeFiles/CPPWA.dir/src/HTTPHeader/HTTPHeader.cpp.s
+.PHONY : src/HTTPHeader/HTTPHeader.cpp.s
+
+src/config/Config.o: src/config/Config.cpp.o
+
+.PHONY : src/config/Config.o
+
+# target to build an object file
+src/config/Config.cpp.o:
+	$(MAKE) -f CMakeFiles/CPPWA.dir/build.make CMakeFiles/CPPWA.dir/src/config/Config.cpp.o
+.PHONY : src/config/Config.cpp.o
+
+src/config/Config.i: src/config/Config.cpp.i
+
+.PHONY : src/config/Config.i
+
+# target to preprocess a source file
+src/config/Config.cpp.i:
+	$(MAKE) -f CMakeFiles/CPPWA.dir/build.make CMakeFiles/CPPWA.dir/src/config/Config.cpp.i
+.PHONY : src/config/Config.cpp.i
+
+src/config/Config.s: src/config/Config.cpp.s
+
+.PHONY : src/config/Config.s
+
+# target to generate assembly for a file
+src/config/Config.cpp.s:
+	$(MAKE) -f CMakeFiles/CPPWA.dir/build.make CMakeFiles/CPPWA.dir/src/config/Config.cpp.s
+.PHONY : src/config/Config.cpp.s
 
 src/database/Database.o: src/database/Database.cpp.o
 
@@ -375,9 +402,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... CPPWA"
 	@echo "... edit_cache"
-	@echo "... CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.o"
-	@echo "... CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.i"
-	@echo "... CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.s"
+	@echo "... src/HTTPHeader/HTTPHeader.o"
+	@echo "... src/HTTPHeader/HTTPHeader.i"
+	@echo "... src/HTTPHeader/HTTPHeader.s"
+	@echo "... src/config/Config.o"
+	@echo "... src/config/Config.i"
+	@echo "... src/config/Config.s"
 	@echo "... src/database/Database.o"
 	@echo "... src/database/Database.i"
 	@echo "... src/database/Database.s"
