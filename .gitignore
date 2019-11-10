@@ -1,8 +1,9 @@
 CMakeLists.txt.user
 .idea/
 CMakeFiles
-cmake-build-*
+cmake-build-*/*
 CMakeCache.txt
+CMakeLists.txt
 Makefile
 CPPWA.cbp
 cmake_install.cmake
