@@ -3,7 +3,6 @@ CMakeLists.txt.user
 CMakeFiles
 cmake-build-*/*
 CMakeCache.txt
-CMakeLists.txt
 Makefile
 CPPWA.cbp
 cmake_install.cmake
